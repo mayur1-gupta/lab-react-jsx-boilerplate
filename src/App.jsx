@@ -22,9 +22,32 @@ const imageData = ()=>{
   ]
   return data;
 }
-
+const imgData = imageData() 
 function App() {
-  // code here
+  return(
+    <>
+    <div>
+      <div>
+        <h1 className='gallaryName'>Kalvium gallary</h1>
+      </div>
+      <div className='body'>
+       {
+        imgData.map((image,index) =>{
+          return(
+            
+            <div key={index}>
+            <img src={image.img} alt="" className='image'/>
+            </div>
+          )
+        })
+       }
+      </div>
+    </div>
+    </>
+  )
+  
+ 
 }
+
 
 export default App;

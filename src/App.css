@@ -1,1 +1,15 @@
 /* add your styles here */
+
+.gallaryName{
+    text-align: center;
+}
+.image{
+    width: 600px;
+    height: 550px;
+    margin: 30px;
+}
+.body{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-gap: 20px;
+   }
